@@ -99,7 +99,7 @@ module.exports = {
       });
     } catch (error) {
       return res.send({
-        error: "controller",
+        error: error.message,
       });
     }
   },
